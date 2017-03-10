@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.americanfootballscorekeeper.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <LinearLayout style="@style/nestedLinearLayouts">
+
+            <TextView
+                style="@style/teamNameTextViews"
+                android:text="@string/team_a" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                style="@style/teamNameTextViews.scoreTextViews"
+                android:text="@string/team_a_score" />
+
+            <Button
+                style="@style/buttons"
+                android:onClick="touchdownA"
+                android:text="@string/td" />
+
+            <Button
+                style="@style/buttons"
+                android:onClick="fgA"
+                android:text="@string/fg" />
+
+            <Button
+                style="@style/buttons"
+                android:onClick="p2A"
+                android:text="@string/p2" />
+
+            <Button
+                style="@style/buttons"
+                android:onClick="patA"
+                android:text="@string/pat" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/view_wi"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/view_mT"
+            android:background="@color/view_bg">
+
+        </View>
+
+        <LinearLayout style="@style/nestedLinearLayouts">
+
+            <TextView
+                style="@style/teamNameTextViews"
+                android:text="@string/team_b" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                style="@style/teamNameTextViews.scoreTextViews"
+                android:text="@string/team_b_score" />
+
+            <Button
+                style="@style/buttons"
+                android:onClick="touchdownB"
+                android:text="@string/td" />
+
+            <Button
+                style="@style/buttons"
+                android:onClick="fgB"
+                android:text="@string/fg" />
+
+            <Button
+                style="@style/buttons"
+                android:onClick="p2B"
+                android:text="@string/p2" />
+
+            <Button
+                style="@style/buttons"
+                android:onClick="patB"
+                android:text="@string/pat" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        style="@style/resetButton"
+        android:layout_marginBottom="@dimen/reset_mB"
+        android:onClick="resetScore"
+        android:text="@string/reset" />
+
+
+</RelativeLayout>

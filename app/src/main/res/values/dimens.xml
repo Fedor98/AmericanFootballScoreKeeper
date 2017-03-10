@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="view_wi">1dp</dimen>
+    <dimen name="view_mT">16dp</dimen>
+    <dimen name="reset_mB">24dp</dimen>
+</resources>
