@@ -7,10 +7,10 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     //Tracks the score for Team A
-    int scoreTeamA = 0;
+    private int scoreTeamA;
 
     //Tracks the score for Team B
-    int scoreTeamB = 0;
+    private int scoreTeamB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
      * Increase the score for Team A by 1 point.
      */
     public void patA(View v) {
-        scoreTeamA = scoreTeamA + 1;
+        scoreTeamA = scoreTeamA++;
         displayForTeamA(scoreTeamA);
     }
 
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
      * Increase the score for Team B by 1 point.
      */
     public void patB(View v) {
-        scoreTeamB = scoreTeamB + 1;
+        scoreTeamB = scoreTeamB++;
         displayForTeamB(scoreTeamB);
     }
 
